@@ -1,4 +1,8 @@
-﻿﻿.field-validation-error{
+﻿.paragraph-styling{
+  color: #ff6a00;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}﻿
+.field-validation-error{
   color: #f00;
 }
 .field-validation-valid{ 
