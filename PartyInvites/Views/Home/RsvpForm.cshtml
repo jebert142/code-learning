@@ -9,17 +9,17 @@
 <html>
 <head>
     <meta name="viewport" content="width=device-width" />
-    <link rel="stylesheet" type="text/css" href="~/Content/Styles.css" />
+    <link rel="stylesheet" type="text/css" href="~/Content/Style.css" />
     <title>RsvpForm</title>
 </head>
 <body>
     @using (Html.BeginForm())
     {
         @Html.ValidationSummary()
-        <p class="field-validation-error field-validation-valid">Your name: @Html.TextBoxFor(x => x.Name)</p>
-        <p class="field-validation-error field-validation-valid">Your email: @Html.TextBoxFor(x => x.Email)</p>
-        <p class="field-validation-error field-validation-valid">Your Phone: @Html.TextBoxFor(x => x.Phone)</p>
-        <p class="input-validation-error validation-summary-errors validation-summary-valid">
+        <p>Your name: @Html.TextBoxFor(x => x.Name)</p>
+        <p>Your email: @Html.TextBoxFor(x => x.Email)</p>
+        <p>Your Phone: @Html.TextBoxFor(x => x.Phone)</p>
+        <p>
             Will you attend?
             @Html.DropDownListFor(x => x.WillAttend, new[]
        {
